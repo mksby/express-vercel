@@ -4,11 +4,7 @@ const product = require("../api/product");
 
 app.use(express.json({ extended: false }));
 
-// app.use("/api/product", product);
-
-// app.use("/api/product2", product);
-
-// app.get("/api/product3", product);
+app.use("/api/product", product);
 
 app.use('/api/welcome', (req, res) => {
     res.send({ message: 'Welcome to api!!' });
